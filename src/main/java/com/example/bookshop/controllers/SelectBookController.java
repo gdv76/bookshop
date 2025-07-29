@@ -16,9 +16,10 @@ import java.util.List;
 public class SelectBookController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-       List<Book> books =  BookRepositoryImpl.getBooks();
+        List<Book> books = BookRepositoryImpl.getBooks();
+
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("/pages/book/list_books.jsp");
         req.setAttribute("books", books);
-        requestDispatcher.forward(req,resp);
+        requestDispatcher.forward(req, resp);
     }
 }

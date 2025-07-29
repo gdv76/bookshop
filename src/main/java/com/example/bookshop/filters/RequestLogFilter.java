@@ -1,11 +1,8 @@
 package com.example.bookshop.filters;
 
 import org.apache.log4j.Logger;
-
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpFilter;
 import javax.servlet.http.HttpServletRequest;
@@ -16,8 +13,6 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-
-import static jdk.internal.org.jline.utils.Colors.h;
 
 @WebFilter(urlPatterns = "/book/create")
 public class RequestLogFilter extends HttpFilter {

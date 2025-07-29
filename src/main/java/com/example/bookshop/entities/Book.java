@@ -1,5 +1,6 @@
 package com.example.bookshop.entities;
 
+// не срабатывает анотация Lombok
 public class Book {
     private long id;
     private String author;

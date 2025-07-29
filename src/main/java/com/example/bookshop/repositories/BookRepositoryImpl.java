@@ -7,6 +7,7 @@ import java.util.List;
 
 public class BookRepositoryImpl implements BookRepository {
     private static final List<Book> books = new ArrayList<>();
+
     @Override
     public void createBook(Book book) {
         books.add(book);
